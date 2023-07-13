@@ -5,7 +5,11 @@ const mongoose = require('mongoose');
 const app = express();
 const PORT = 5000;
 
-app.use(cors());
+app.use(cors({
+  origin: {"https://sms-backend-api.vercel.app"},
+  methods:{"POST","GET","PUT","DELETE"},
+  credentials: true
+}));
 app.use(express.json());
 
 // Connecting to MongoDB
