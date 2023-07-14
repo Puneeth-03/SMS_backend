@@ -33,6 +33,9 @@ const studentSchema = new mongoose.Schema({
 
 const Student = mongoose.model('Student', studentSchema);
 
+app.get('/',(req,res)=>{
+  res.send("hello world!!!");
+});
 // Routes
 //old code
 app.get('/students', async (req, res) => {
