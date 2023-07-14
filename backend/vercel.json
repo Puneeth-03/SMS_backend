@@ -7,7 +7,7 @@
     {
       "src":"/(.*)",
       "dest":"/"
-    }
-  ],
+    },
   "rewrites": [{ "source": "/students/(.*)", "destination": "/students" }]
+  ]
 }
