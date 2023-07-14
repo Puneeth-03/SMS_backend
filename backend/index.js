@@ -43,6 +43,7 @@ app.get('/students', async (req, res) => {
       const {page,maxrec} = req.query;
       const students = await Student.find({}).limit(maxrec).skip((page-1)*maxrec);
       res.json(students);
+      res.send("success");
     } catch (err) {
       console.log(err);
       res.status(500).send('Internal Server Error');
