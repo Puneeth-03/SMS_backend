@@ -8,8 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/students",
-      "dest": "/index.js"
+      "src": "/api/students",
+      "dest": "/students"
     },
     {
       "src": "/(.*)",
