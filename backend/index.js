@@ -6,7 +6,7 @@ const app = express();
 const PORT = 5000;
 
 app.use(cors({
-  origin: ["https://sms-backend-api.vercel.app"],
+  origin: ["https://sms-frontend-livid.vercel.app/"],
   methods:["POST","GET","PUT","DELETE"],
   credentials: true
 }));
